@@ -1,0 +1,121 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+.navLink {
+	color: white;
+	text-decoration: none;
+}
+
+
+.wrapper {
+	display: grid;
+	background-color: purple;
+	grid-row-gap: 5px;
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-rows:auto;
+	grid-template-areas: 
+			"header header header"
+			". ContentCon ."
+			"footer footer footer"
+	;
+}
+
+/*HEADER CODE*/
+	.header {background-color: deepskyblue;
+		display: grid;
+		height: 100px;
+		grid-area: header;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas: 
+			"logoContainer higher"
+			"logoContainer notificationC"
+		;
+	}
+
+	#logoContainer {
+		display: grid;
+		grid-area: logoContainer;
+		justify-content: center;
+	}	
+	#notificationC {
+		display: grid;
+		grid-area: notificationC;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	#higherNav {;
+		display: grid;
+		grid-area: higher;
+		justify-content: right;
+	}
+
+	.headerIcon {
+			display: grid;
+			justify-content: center;
+			
+	}
+
+
+
+/*CONTENT CONTAINER CODE*/
+	.ContentCon {background-color: pink;
+		display: grid;
+		grid-area: ContentCon;
+	}
+
+	/*NAVIGATION BAR CODE*/
+		.NavigationBar {background-color: green;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			margin-bottom: 5px;
+		}
+
+	/*MAIN LIST CODE*/
+		#friendlist {background-color: yellow;
+			display: grid;
+			grid-template-rows: auto;
+			grid-gap: 5px;
+			margin-bottom: 2px;
+		}
+
+		/*JS created profiles*/
+			#ContainerProfile {background-color: slateblue;
+				display: grid;
+				grid-template-columns: 135px 100px 2fr;
+				margin-left: 4px;
+				margin-right: 2px;
+
+			}
+
+			#ContainerImage {
+			display: grid;
+			border:solid black 1px;
+			justify-content: center;
+			}
+
+			#impContainer {
+				font-size: 30px;
+			}
+
+			#ContainerInfo {
+			list-style:none;
+			display: grid;
+			font-size:15px;
+			border:solid black 1px
+			}
+
+/*FOOTER CODE*/
+	.footer {background-color: blue;
+		display: grid;
+		grid-area: footer;
+		height: 100px;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+		.legal {
+			display: grid;
+			justify-content: center;
+		}
+
