@@ -1,0 +1,27 @@
+//filling in profile variables
+var info = document.createTextNode("Name: "+Friends.[i].name+
+									"Age: "+Friends.[i].age+
+									"About: "+Friends.[i].about+
+									"Date of birth: "+Friends.[i].dateOfBirth+
+									"Status: "+Friends.[i].status);
+image.src =Friends.[i].pImage;
+
+HTML PROFILE CONTAINER CODE
+<!--<div class="profileContainer">
+				<div id="ContainerImage"><img class="facePic" width="180" height="120" src="images/Profile pictures/proPic2.jpg"></div>
+				<div id="ContainerInfo">
+					Name: Fe-Julia Kooper<br>
+					Age: 9<br>
+					About: I loving, caring and annoying.<br>
+					Birth of date: 14 july, 2013<br>
+					Status: In the need for popcorn<br>
+				</div>
+		</div>-->
+
+//debug code
+var p = document.createElement("p");
+var text = document.createTextNode("This better not be it");
+p.appendChild(text);
+var friendlist = document.getElementById("friendlist");
+friendlist.appendChild(p);
+*/
