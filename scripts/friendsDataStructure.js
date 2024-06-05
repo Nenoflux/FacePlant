@@ -10,7 +10,7 @@ function friend(name,age, about,dateOfBirth,status,pImage){
 };
 
 
-//Debug friends
+//Dummy friends
 var Garisa = new friend ("Garisa",10,"Totally awesome","2008/07/14","Yeah off of you","images/Profile pictures/IMG_0503.jpg"); 
 
 var James = new friend ("James", 51, "A badass", "1942/06/14", "Totally old","images/Profile pictures/upwork1.png");
